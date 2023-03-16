@@ -1,0 +1,32 @@
+/node_modules/
+web/packages*.json
+web/providers-*.json
+web/p/
+web/p2/
+web/build/
+/config/parameters.yml
+/.settings
+/.buildpath
+/.project
+/.idea
+/composer.phar
+/nbproject
+/.php-cs-fixer.cache
+/.phpstan-dba.cache
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/web/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+test.php
