@@ -9,4 +9,6 @@ class Constants
     const SRID_MASK = 0x20000000;
 
     const DEFAULT_SRID = -1;
+
+    const EARTH_RADIUS_METRES = 6372797.560856;
 }

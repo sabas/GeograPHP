@@ -47,6 +47,13 @@ class Point extends Geometry
         }
     }
 
+    public function get_xy() {
+        return [
+            $this->x,
+            $this->y
+        ];
+    }
+
     public function set_xy($x, $y)
     {
         $this->x = $x;

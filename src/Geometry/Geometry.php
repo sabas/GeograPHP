@@ -3,9 +3,9 @@
 namespace GeograPHP\Geometry;
 
 use GeograPHP\Constants;
-use GeograPHP\Parser\EWKBParser;
-use GeograPHP\Parser\EWKTParser;
-use GeograPHP\Parser\HexEWKBParser;
+use GeograPHP\Parser\EWKB\Parser as EWKBParser;
+use GeograPHP\Parser\EWKT\Parser as EWKTParser;
+use GeograPHP\Parser\EWKB\HexParser as HexEWKBParser;
 
 abstract class Geometry
 {
@@ -37,8 +37,8 @@ abstract class Geometry
     public function __construct($srid = null, $with_z = false, $with_m = false)
     {
         $this->srid = $srid === null ? Constants::DEFAULT_SRID : $srid;
-        $this->with_z = $with_z;
-        $this->with_m = $with_m;
+        $this->with_z = $with_z ?? false;
+        $this->with_m = $with_m ?? false;
     }
 
     /**
